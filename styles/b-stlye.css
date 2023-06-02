@@ -1,0 +1,155 @@
+* {
+  /* border: 2px solid gray; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ececec;
+}
+/*  */
+.top-container {
+  flex-grow: 1;
+  display: flex;
+  margin: 12px;
+  max-height: 100vh;
+}
+.bottom-container {
+  flex-grow: 1.5;
+  display: flex;
+  margin: 0px 12px 12px 12px;
+}
+/*  */
+.top-left-container {
+  width: 400px;
+  flex-shrink: 0;
+  background-image: url(../images/网站名.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.top-right-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-left: 12px;
+}
+/*  */
+.up {
+  /* height: 55px; */
+  flex-grow: 300;
+  flex-shrink: 0;
+  border-radius: 10px 10px 0px 0px/15px 15px 0px 0px;
+  border-bottom: 0px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 4px -4px,
+    rgb(0 0 0 / 14%) 0px 4px 4px 0px, rgb(0 0 0 / 12%) 0px 4px 12px 0px;
+  background-image: url(../images/留言板顶部.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.down {
+  flex-grow: 1;
+  display: flex;
+  /* padding: 0px 5px 5px 5px; */
+  border-radius: 0px 0px 10px 10px/0px 0px 15px 15px;
+  /* background-color: #dce0e1; */
+}
+/*  */
+.main {
+  display: flex;
+  max-height: 97vh;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.push {
+  width: 100%;
+  height: 45%;
+  background-color: white;
+  border-bottom: 5px solid#dce0e1;
+  background-image: url(../images/留言条背景.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.user-name {
+  height: 33px;
+  width: 180px;
+  position: absolute;
+  top: 25px;
+  left: 112px;
+  font-size: 27px;
+  font-family: SimHei;
+  color: #5b5b5b;
+}
+.avatar-frame {
+  border: 8px solid #ead4a5;
+  border-radius: 100%;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  background-image: url(../images/头像1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+.text-box {
+  display: block;
+  border: 1px solid rgb(189, 189, 189);
+  height: 185px;
+  width: 670px;
+  /* height: 55%;
+  width: 90%; */
+  margin-left: 70px;
+  margin-top: 8%;
+  padding: 10px 5px 10px 10px;
+  line-height: 23px;
+  font-size: 15px;
+  color: #555555;
+}
+.text-box::before {
+  content: "      ";
+  white-space: pre;
+}
+/* .aside {
+  width: 260px;
+  flex-shrink: 0;
+  background-color: white;
+  border-left: 5px solid #dce0e1;
+} */
+
+/* 通用 */
+.game,
+.accordion,
+.new-list,
+.hot-list,
+.top-left-container {
+  border-radius: 10px/15px;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 20%) 0px 6px 3px -3px,
+    rgb(0 0 0 / 14%) 0px 3px 3px 0px, rgb(0 0 0 / 12%) 0px 3px 9px 0px;
+}
+.down {
+  box-shadow: rgb(0 0 0 / 20%) 0px 6px 3px -3px,
+    rgb(0 0 0 / 14%) 0px 3px 3px 0px, rgb(0 0 0 / 12%) 0px 3px 9px 0px;
+}
+.game,
+.accordion,
+.hot-list,
+.new-list {
+  flex-grow: 3.5;
+  margin-right: 12px;
+}
+.game {
+  flex-grow: 1;
+}
+.hot-list {
+  margin-right: 0px;
+}
